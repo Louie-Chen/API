@@ -10994,12 +10994,12 @@ p{
 .ad-p-left{
   display: inline;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .ad-p-right{
   display: inline;
-  padding-left: 10px;
+  padding-left: 8px;
   padding-right: 10px;
 }
 
@@ -11011,12 +11011,12 @@ p{
 .ch-p-left{
   display: inline;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .ch-p-right{
   display: inline;
-  padding-left: 10px;
+  padding-left: 8px;
   padding-right: 10px;
 }
 
