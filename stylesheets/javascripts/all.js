@@ -174,18 +174,18 @@ function getInfo(){
 function renderCountyList(list) {
     var str='';
     const listLen = list.length;
-    const defaultOption = `<option value="default" disabled selected>選擇縣市</option>`;
+    const defaultOption = `<option value="default" disabled selected>縣市</option>`;
     for (let i=0; i<listLen; i++){
         str += `<option value="${list[i]}">${list[i]}</option>`
     };
 
     county.innerHTML = defaultOption +str;
-    town.innerHTML = `<option value="default" disabled selected>選擇行政區</option>`;
+    town.innerHTML = `<option value="default" disabled selected>行政區</option>`;
 }
 
 county.addEventListener('change',function(e){
      map.setView([countyList[e.target.value][0],countyList[e.target.value][1]],11);
-     var defaultOption =   `<option value="default" disabled selected>選擇行政區</option>`;
+     var defaultOption =   `<option value="default" disabled selected>行政區</option>`;
      var str ='';
      for(let a in areaList){
          if(e.target.value===areaList[a]['county']){

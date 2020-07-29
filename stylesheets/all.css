@@ -10982,7 +10982,7 @@ p{
 }
 .position-ID{
   position: absolute;
-  top: 12px;
+  top: 7px;
   right: -11px;
 }
 
@@ -11122,4 +11122,10 @@ span{
 
 .title_phone{
   font-size: 12px;
+}
+
+.position_day{
+  position: absolute;
+  left: 25px;
+  bottom: 58px;
 }
