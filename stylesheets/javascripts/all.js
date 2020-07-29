@@ -1,3 +1,10 @@
+document.querySelector('.hero').style.height = window.innerHeight+ "px"
+window.onresize = function(){
+    document.querySelector('.hero').style.height = window.innerHeight+ "px"
+    
+}
+
+
 
 //選單效果
 $(document).ready(function () {

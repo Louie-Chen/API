@@ -11093,7 +11093,7 @@ span{
 
 .list{
   padding: 0.5rem;
-  height: 83%;
+  height: 60%;
   overflow-y: auto;
   background-color: white;
 }
@@ -11127,7 +11127,7 @@ span{
 .position_day{
   position: absolute;
   left: 25px;
-  bottom: 20px;
+  bottom: 10%;
 }
 
 .select_county{
@@ -11176,12 +11176,12 @@ span{
     transform: translateX(250px);
   }
   .list{
-    height: 84%;
+    height: 60%;
   }
   .position_day{
     position: absolute;
     left: 40px;
-    bottom: 15px;
+    bottom: 10%;
   }
   h2{
     font-size: 22px;
