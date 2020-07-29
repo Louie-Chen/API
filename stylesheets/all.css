@@ -11136,7 +11136,7 @@ span{
 }
 
 .select_town{
-  left: -10px;
+  left: -8px;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -11176,7 +11176,7 @@ span{
     transform: translateX(250px);
   }
   .list{
-    height: 75%;
+    height: 84%;
   }
   .position_day{
     position: absolute;
