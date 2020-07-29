@@ -11127,7 +11127,7 @@ span{
 .position_day{
   position: absolute;
   left: 25px;
-  bottom: 58px;
+  bottom: 0px;
 }
 
 .select_county{
@@ -11136,7 +11136,7 @@ span{
 }
 
 .select_town{
-  padding-left: 25px;
+  padding-left: 0px;
   padding-right: 0px;
 }
 
