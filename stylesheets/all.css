@@ -11175,11 +11175,11 @@ span{
     transform: translateX(250px);
   }
   .list{
-    height: 75%;
+    height: 83%;
   }
   .position_day{
     position: absolute;
-    left: 25px;
+    left: 40px;
     bottom: 15px;
   }
   h2{
