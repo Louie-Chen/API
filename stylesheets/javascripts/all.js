@@ -152,14 +152,14 @@ function getInfo(){
         <div class="content">
         <h2 class="name ">${data[i].properties.name}</h2>
         <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" alt="marker" class="marker_icon" data-locate="${[data[i].geometry.coordinates[1], data[i].geometry.coordinates[0]]}" data-name="${data[i].properties.name}" data-address="${data[i].properties.address}">
-        <p title="${data[i].properties.address}">${data[i].properties.address}</p>
-        <p >${data[i].properties.phone}</p>
-        <p title="${data[i].properties.note}">${data[i].properties.note}</p>
+        <p class="title" title="${data[i].properties.address}">${data[i].properties.address}</p>
+        <p class="title_phone">${data[i].properties.phone}</p>
+        <p class="title_note" title="${data[i].properties.note}">${data[i].properties.note}</p>
         <div class="row mt-3">
-        <div class="col-6">
+        <div class="col-12 mb-2">
         <div class="adult"><p class="ad-p-left ">成人口罩</p><p class="ad-p-right">${data[i].properties.mask_adult}</p></div>
         </div>
-        <div class="col-6">
+        <div class="col-12">
         <div class="child"><p class="ch-p-left">小孩口罩</p><p class="ch-p-right">${data[i].properties.mask_child}</p></div>
         </div>
         </div>
@@ -174,18 +174,18 @@ function getInfo(){
 function renderCountyList(list) {
     var str='';
     const listLen = list.length;
-    const defaultOption = `<option value="default" disabled selected>-- 請選擇縣市 --</option>`;
+    const defaultOption = `<option value="default" disabled selected>選擇縣市</option>`;
     for (let i=0; i<listLen; i++){
         str += `<option value="${list[i]}">${list[i]}</option>`
     };
 
     county.innerHTML = defaultOption +str;
-    town.innerHTML = `<option value="default" disabled selected>- 請選擇行政區 -</option>`;
+    town.innerHTML = `<option value="default" disabled selected>選擇行政區</option>`;
 }
 
 county.addEventListener('change',function(e){
      map.setView([countyList[e.target.value][0],countyList[e.target.value][1]],11);
-     var defaultOption =   `<option value="default" disabled selected>- 請選擇行政區 -</option>`;
+     var defaultOption =   `<option value="default" disabled selected>選擇行政區</option>`;
      var str ='';
      for(let a in areaList){
          if(e.target.value===areaList[a]['county']){
@@ -201,14 +201,14 @@ county.addEventListener('change',function(e){
              <div class="content">
              <h2 class="name ">${data[i].properties.name}</h2>
              <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" alt="marker" class="marker_icon" data-locate="${[data[i].geometry.coordinates[1], data[i].geometry.coordinates[0]]}" data-name="${data[i].properties.name}" data-address="${data[i].properties.address}">
-             <p title="${data[i].properties.address}">${data[i].properties.address}</p>
-             <p >${data[i].properties.phone}</p>
-             <p title="${data[i].properties.note}">${data[i].properties.note}</p>
+             <p class="title" title="${data[i].properties.address}">${data[i].properties.address}</p>
+             <p class="title_phone">${data[i].properties.phone}</p>
+             <p class="title_note" title="${data[i].properties.note}">${data[i].properties.note}</p>
              <div class="row mt-3">
-             <div class="col-6">
+             <div class="col-12 mb-2">
              <div class="adult"><p class="ad-p-left ">成人口罩</p><p class="ad-p-right">${data[i].properties.mask_adult}</p></div>
              </div>
-             <div class="col-6">
+             <div class="col-12">
              <div class="child"><p class="ch-p-left">小孩口罩</p><p class="ch-p-right">${data[i].properties.mask_child}</p></div>
              </div>
              </div>
@@ -239,14 +239,14 @@ town.addEventListener(`change`, function(e) {
             <div class="content">
             <h2 class="name">${data[i].properties.name}</h2>
             <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" alt="marker" class="marker_icon" data-locate="${[data[i].geometry.coordinates[1], data[i].geometry.coordinates[0]]}" data-name="${data[i].properties.name}" data-address="${data[i].properties.address}">
-            <p title="${data[i].properties.address}">${data[i].properties.address}</p>
-            <p >${data[i].properties.phone}</p>
-            <p title="${data[i].properties.note}">${data[i].properties.note}</p>
+            <p class="title" title="${data[i].properties.address}">${data[i].properties.address}</p>
+            <p class="title_phone" >${data[i].properties.phone}</p>
+            <p class="title_note" title="${data[i].properties.note}">${data[i].properties.note}</p>
             <div class="row mt-3">
-            <div class="col-6">
+            <div class="col-12 mb-2">
             <div class="adult"><p class="ad-p-left ">成人口罩</p><p class="ad-p-right">${data[i].properties.mask_adult}</p></div>
             </div>
-            <div class="col-6">
+            <div class="col-12">
             <div class="child"><p class="ch-p-left">小孩口罩</p><p class="ch-p-right">${data[i].properties.mask_child}</p></div>
             </div>
             </div>

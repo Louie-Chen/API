@@ -10892,7 +10892,7 @@ li{
   width: 100%;
   height: 100%;
   z-index: 1;
-  transform: translateX(390px);
+  transform: translateX(220px);
 }
 
 .container-fluid{
@@ -10915,7 +10915,7 @@ li{
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 390px;
+  width: 220px;
   background-color:white;
   overflow: hidden;
   transition: all .3s;
@@ -10926,14 +10926,18 @@ li{
   width: 30px;
   height: 60px;
   position: absolute;
-  top: 115px;
-  left: 390px;
+  top: 88.5px;
+  left: 220px;
   z-index: 5;
 }
 
-.shownav .aside{left:-390px;}
+.leaflet-left .leaflet-control{
+  margin-left: 44px;
+}
+
+.shownav .aside{left:-220px;}
 .shownav .toggle-menu{left:0px;}
-.shownav .show-map{left: -390px;}
+.shownav .show-map{left: -220px;}
 .i-box{
   position: absolute;
   width: 30px;
@@ -10976,9 +10980,14 @@ p{
   margin-top: 1.5px;
   margin-bottom: 0rem !important;
 }
+.position-ID{
+  position: absolute;
+  top: 8px;
+  right: -11px;
+}
 
 .id-p{
-  font-size: 15px;
+  font-size: 10px;
   letter-spacing: 1px;
   margin-top: 10px;
 }
@@ -11065,11 +11074,12 @@ p{
 }
 
 h2{
-  font-size: 40px;
+  font-size: 20px;
 }
 
 h6{
-  padding-top: 0.5em;
+  font-size: 12px;
+  padding-top: 1px;
 }
 
 .odd,.even,.all{
@@ -11082,14 +11092,14 @@ span{
 }
 
 .list{
-  padding: 1rem;
-  height: 75%;
+  padding: 0.5rem;
+  height: 70%;
   overflow-y: auto;
   background-color: white;
 }
 
 .marker_icon{
-  max-width: 5%;
+  max-width: 8%;
   float: right;
 }
 
@@ -11099,5 +11109,17 @@ span{
 
 .name{
   display: inline;
-  font-size: 28px;
+  font-size: 22px;
+}
+
+.title{
+  font-size: 12px;
+}
+
+.title_note{
+  font-size: 12px;
+}
+
+.title_phone{
+  font-size: 12px;
 }
