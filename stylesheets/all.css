@@ -11129,3 +11129,89 @@ span{
   left: 25px;
   bottom: 58px;
 }
+
+.select_county{
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.select_town{
+  padding-left: 25px;
+  padding-right: 0px;
+}
+
+@media(min-width:500px){
+
+  .aside{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color:white;
+    overflow: hidden;
+    transition: all .3s;
+    z-index: 2;
+  }
+  
+  .toggle-menu{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 90.5px;
+    left: 250px;
+    z-index: 5;
+  }
+  
+  
+  .shownav .aside{left:-250px;}
+  .shownav .toggle-menu{left:0px;}
+  .shownav .show-map{left: -250px;}
+
+
+  .show-map{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(250px);
+  }
+  .list{
+    height: 75%;
+  }
+  .position_day{
+    position: absolute;
+    left: 25px;
+    bottom: 15px;
+  }
+  h2{
+    font-size: 22px;
+  }
+  .id-p{
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  h6{
+    font-size: 12px;
+    padding-top: 3px;
+  }
+  .position-ID{
+    position: absolute;
+    top: 11px;
+    right: -11px;
+  }
+  .select_county{
+   padding: 1.5em;
+  }
+  
+  .select_town{
+  padding: 1em;
+  }
+  .name{
+    display: inline;
+    font-size: 18px;
+  }
+  .marker_icon{
+    max-width: 6%;
+    float: right;
+  }
+}
